@@ -1,4 +1,4 @@
-site_name: My Portfolio️
+site_name: MrChike
 site_url: http://localhost:3000
 repo_name: MrChike/media_app
 repo_url: https://github.com/MrChike/media_app
@@ -6,6 +6,7 @@ theme:
   name: material
   # NB: logo.png should be created under docs/assets/images/
   # This is what makes it visible under site/assets/images/
+
   # logo: assets/images/logo.png
   # favicon: assets/images/logo.png
   icon:
@@ -16,6 +17,7 @@ theme:
     - navigation.tabs
     - toc.integrate
     - content.code.copy
+    - navigation.footer
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -46,7 +48,6 @@ nav:
   - contributions.md
   - certifications.md
   - articles.md
-  - contact.md
 
 extra:
   social:
