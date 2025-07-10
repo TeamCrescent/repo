@@ -1,7 +1,7 @@
 site_name: MrChike
-site_url: http://localhost:3000
-repo_name: MrChike/media_app
-repo_url: https://github.com/MrChike/media_app
+site_url: https://mrchike.github.io/portfolio/
+repo_name: MrChike/portfolio
+repo_url: https://github.com/MrChike/portfolio
 theme:
   name: material
   # NB: logo.png should be created under docs/assets/images/
@@ -15,9 +15,10 @@ theme:
     text: Ubuntu Mono
   features:
     - navigation.tabs
+    - navigation.footer
+    - navigation.top
     - toc.integrate
     - content.code.copy
-    - navigation.footer
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -51,14 +52,23 @@ nav:
 
 extra:
   social:
+    - icon: fontawesome/brands/dev
+      link: https://dev.to/mrchike
+      name: My DEV Profile
+    - icon: octicons/briefcase-24
+      link: https://mrchike.github.io/chikeegonu/
+      name: My Projects Portfolio️
     - icon: material/linkedin
       link: https://www.linkedin.com/in/chikeegonu/
       name: My LinkedIn Profile
-    - icon: octicons/person-fill-24
-      link: https://mrchike.github.io/chikeegonu/
-      name: My Projects Portfolio️
     - icon: fontawesome/brands/github
       link: https://github.com/MrChike
       name: My Github Profile
+    - icon: simple/leetcode
+      link: https://leetcode.com/mrchike
+      name: My LeetCode Profile
+    - icon: fontawesome/brands/kaggle
+      link: https://www.kaggle.com/chikeegonu
+      name: My Kaggle Profile
 
 copyright: Copyright ©️ 2025 - Infinityyyyy & Beyond 🚀 - Chike Egonu

@@ -6,13 +6,8 @@
 <h1 align="center">Hi 👋, I'm Chike Egonu</h1>
 <h3 align="left">A self-disciplined and focused software engineer with experience building solutions to real-world problems, committed to contributing in a collaborative, respectful, and supportive environment.</h3>
 
-
 - 🔭 I’m currently working on a **Fraud Detection System** and open to collaboration
-
-- 👨‍💻 All of my projects are available at [https://mrchike.github.io/chikeegonu/](https://mrchike.github.io/chikeegonu/)
-
 - 📝 I regularly write articles on [https://dev.to/mrchike](https://dev.to/mrchike)
-
 - 💬 Ask me about **Python, FastAPI, Django, Javascript, React, Typescript**
 
 <h3 align="left">Connect with me:</h3>
@@ -25,14 +20,15 @@
 
 &nbsp;
 
-<p><img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=mrchike&" alt="mrchike" /></p>
-
 ## 📊 GitHub Stats
-🏆 **Public Repositories:** 32  
-👥 **Followers:** 38  
-🔗 **Following:** 25  
+![Followers](https://img.shields.io/github/followers/mrchike)
+![Stars](https://img.shields.io/github/stars/mrchike)
+<br>
+![github](https://github-readme-stats.vercel.app/api?username=mrchike&show_icons=true&theme=github)
 
-<br><br><p><a href="https://www.buymeacoffee.com/mrchike"> <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="mrchike" /></a></p>
+![Badge](https://github-profile-trophy.vercel.app/?username=mrchike&theme=github)
+
+<p><a href="https://www.buymeacoffee.com/mrchike"> <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="mrchike" /></a></p>
 
 ## 🕒 Recent Activity
 
