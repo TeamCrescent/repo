@@ -1,10 +1,10 @@
-### Introduction
+## 🥷 Tell us about yourself?
 
 <p align="center">
   <img src="https://avatars.githubusercontent.com/u/20612421?v=4" alt="Chike Egonu" width="150" height="150" style="border-radius: 50%;" />
 </p>
 <h1 align="center">Hi 👋, I'm Chike Egonu</h1>
-<h3 align="left">A self-disciplined and focused software engineer with experience in developing innovative solutions, eager to contribute to solving real-world problems in a collaborative, respectful, and supportive environment.</h3>
+<h3 align="left">A self-disciplined and focused software engineer with experience building solutions to real-world problems, committed to contributing in a collaborative, respectful, and supportive environment.</h3>
 
 
 - 🔭 I’m currently working on a **Fraud Detection System** and open to collaboration
@@ -27,17 +27,20 @@
 
 <p><img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=mrchike&" alt="mrchike" /></p>
 
-## GitHub Stats
+## 📊 GitHub Stats
 🏆 **Public Repositories:** 32  
 👥 **Followers:** 38  
 🔗 **Following:** 25  
 
 <br><br><p><a href="https://www.buymeacoffee.com/mrchike"> <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="mrchike" /></a></p>
 
-## Recent Activity
+## 🕒 Recent Activity
 
 - Created a new tag in [media_app](https://github.com/MrChike/media_app) for seriesB_crud_ops.
 - Deleted the tag seriesB_crud_operations in [media_app](https://github.com/MrChike/media_app).
 - Pushed updates to the seriesB branch in [media_app](https://github.com/MrChike/media_app).
 - Forked the [n8n-workflows](https://github.com/Zie619/n8n-workflows) repository.
 - Created a new tag in [media_app](https://github.com/MrChike/media_app) for seriesB_celery_setup.
+
+## 👀 Where do you see yourself in 5 years?
+- Mentoring CEOs at FAANG and MANGO companies
