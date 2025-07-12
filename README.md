@@ -11,7 +11,7 @@ This is the source code for my personal portfolio site:
 
 This repository serves two main purposes:
 
-1. **My personal portfolio**: Built with [MkDocs](https://www.mkdocs.org/) and hosted with GitHub Pages.
+1. **My personal portfolio**: Built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) and hosted with GitHub Pages.
 2. **A learning resource**: You can use it as a template to build your own portfolio, especially if you're exploring static site generators like MkDocs for developer portfolios or documentation.
 
 ---
