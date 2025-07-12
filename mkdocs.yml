@@ -7,18 +7,22 @@ theme:
   # NB: logo.png should be created under docs/assets/images/
   # This is what makes it visible under site/assets/images/
 
-  # logo: assets/images/logo.png
-  # favicon: assets/images/logo.png
+  logo: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/chai.svg
+  favicon: assets/images/favicon.ico
+  custom_dir: docs/overrides/partials
   icon:
     repo: octicons/mark-github-24
+    admonition:
+      note: material/notebook-heart-outline
   font:
     text: Ubuntu Mono
   features:
-    - navigation.tabs
-    - navigation.footer
-    - navigation.top
-    - toc.integrate
+    - announce.dismiss
     - content.code.copy
+    - toc.integrate
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -55,9 +59,6 @@ extra:
     - icon: fontawesome/brands/dev
       link: https://dev.to/mrchike
       name: My DEV Profile
-    - icon: octicons/briefcase-24
-      link: https://mrchike.github.io/chikeegonu/
-      name: My Projects Portfolio️
     - icon: material/linkedin
       link: https://www.linkedin.com/in/chikeegonu/
       name: My LinkedIn Profile
@@ -70,5 +71,13 @@ extra:
     - icon: fontawesome/brands/kaggle
       link: https://www.kaggle.com/chikeegonu
       name: My Kaggle Profile
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/extra.js
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js
+  - https://cdn.jsdelivr.net/npm/@primer/octicons@19.6.0/build/build.js
 
 copyright: Copyright ©️ 2025 - Infinityyyyy & Beyond 🚀 - Chike Egonu
