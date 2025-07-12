@@ -1,28 +1,28 @@
-# name: Daily MkDocs Deploy
+name: Daily MkDocs Deploy
 
-# on:
-#   schedule:
-#     - cron: '0 0 * * *'  # Runs at 00:00 UTC every day
-#   workflow_dispatch:
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs at 00:00 UTC every day
+  workflow_dispatch:
 
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - name: Checkout Repository
-#         uses: actions/checkout@v3
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-#       - name: Set up Python
-#         uses: actions/setup-python@v4
-#         with:
-#           python-version: '3.x'
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
 
-#       - name: Install dependencies
-#         run: |
-#           pip3 install mkdocs
+      - name: Install dependencies
+        run: |
+          pip3 install mkdocs
 
-#       - name: Deploy MkDocs Site
-#         env:
-#           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#         run: mkdocs gh-deploy --force
+      - name: Deploy MkDocs Site
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: mkdocs gh-deploy --force
