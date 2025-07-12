@@ -7,7 +7,7 @@ theme:
   # NB: logo.png should be created under docs/assets/images/
   # This is what makes it visible under site/assets/images/
 
-  logo: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/chai.svg
+  logo: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg
   favicon: assets/images/favicon.ico
   custom_dir: docs/overrides/partials
   icon:
