@@ -20,6 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          sudo apt install -y python3-pip
           pip3 install mkdocs
 
       - name: Deploy MkDocs Site
