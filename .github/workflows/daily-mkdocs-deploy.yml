@@ -2,7 +2,8 @@ name: Daily MkDocs Deploy
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs at 00:00 UTC every day
+    - cron: '0 23 * * *'  # 12:00 AM WAT
+    - cron: '0 8 * * *'   # 09:00 AM WAT
   workflow_dispatch:
 
 jobs:
