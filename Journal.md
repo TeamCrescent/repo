@@ -1,12 +1,26 @@
 # Journal
 
 ## TODO
+- Document how crontab was set
 - Write scaffolding script
 
 
-## Activities
+## Commands
 
 ```bash
-sudo apt install pngquant
+sudo apt install pngquant #compress png images in command line
 find . -type f -name "*.png" -exec pngquant --quality=65-80 --ext .png --force {} \;
+tree -L 1 # Displays current folder without recursion
+
+├── cronjobs
+├── education
+├── open_source
+├── projects
+└── scripts
+
 ```
+
+## Error Logs & Fixes
+
+## Resource Findings
+- https://pollunit.com/

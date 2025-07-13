@@ -22,7 +22,8 @@ This repository serves two main purposes:
 |-----------------|-----------------------------------|
 | [MkDocs](https://www.mkdocs.org/) | Static site generator for project/docs |
 | [GitHub Pages](https://pages.github.com/) | Free hosting for static websites |
-| [GitHub Actions](https://docs.github.com/en/actions) | Automated daily deployment (optional) |
+| [GitHub Actions](https://docs.github.com/en/actions) | Online Automated daily deployment (optional) |
+| [Cron](https://en.wikipedia.org/wiki/Cron) | Offline Automated daily deployment (optional) |
 | Markdown        | Simple, readable content formatting |
 
 ---
@@ -42,3 +43,5 @@ To clone and run this site locally:
 git clone https://github.com/MrChike/portfolio.git
 cd portfolio
 pip install mkdocs
+
+```
