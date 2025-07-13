@@ -1,11 +1,9 @@
-name: Daily MkDocs Deploy
+name: Deploy Portfolio
 
 on:
   workflow_dispatch:  # This enables manual triggering
-  schedule:
-    - cron: '0 0 * * *'  # 12:00 AM WAT
-    - cron: '0 9 * * *'   # 09:00 AM WAT
-    - cron: '*/5 * * * *'   # Every 30 minutes
+  # schedule:
+  #   - cron: '0 0 * * *'  # 12:00 AM
 
 jobs:
   build:
