@@ -1,9 +1,12 @@
 name: Deploy Portfolio
 
 on:
-  workflow_dispatch:  # This enables manual triggering
-  # schedule:
-  #   - cron: '0 0 * * *'  # 12:00 AM
+  push: # Trigger on push
+    branches:
+      - master # Update to preferred branch
+  workflow_dispatch:  # Enables manual triggering
+  schedule:
+    - cron: '*/30 * * * *'  # Scheduled every 30 minutes
 
 jobs:
   build:
@@ -18,13 +21,19 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
-        run: |
-          sudo apt -y update
-          sudo apt install -y python3-pip
-          pip3 install mkdocs
+      - name: Install MKDocs & Dependencies
+        run: | 
+          pip3 install mkdocs-material
 
-      - name: Deploy MkDocs Site
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: mkdocs gh-deploy --force
+      - name: Build MkDocs Site
+        run: mkdocs build
+
+      - name: Debugging Operations
+        run: pwd && tree -L 1
+
+      - name: Deploy Site to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # personal_token: ${{ secrets.MKDOCS_DEPLOY_TOKEN }}
+          publish_dir: site
