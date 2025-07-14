@@ -5,8 +5,8 @@ on:
     branches:
       - master # Update to preferred branch
   workflow_dispatch:  # Enables manual triggering
-  schedule:
-    - cron: '*/30 * * * *'  # Scheduled every 30 minutes
+  # schedule:
+  #   - cron: '*/30 * * * *'  # Scheduled every 30 minutes
 
 jobs:
   build:
