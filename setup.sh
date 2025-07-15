@@ -11,7 +11,7 @@
 python3 -m venv env 
 source env/bin/activate
 
-pip install mkdocs-material
+pip install mkdocs-material==9.5.6
 mkdocs new portfolio
 
 cd portfolio
