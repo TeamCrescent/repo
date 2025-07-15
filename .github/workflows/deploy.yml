@@ -34,7 +34,7 @@ jobs:
       - name: Deploy Site to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          # ssh-keygen -t rsa -b 4096 -C "$(whoami)@$(hostname)" -f ~/.ssh/id_rsa -N ""
+          # ssh-keygen -t rsa -b 4096 -C "$(whoami)@$(hostname)" -f ~/.ssh/id_rsa -N "" && cat ~/.ssh/id_rsa.pub
           # https://github.com/settings/keys
           # https://github.com/settings/personal-access-tokens
           # https://github.com/peaceiris/actions-gh-pages
