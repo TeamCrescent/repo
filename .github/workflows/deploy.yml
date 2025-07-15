@@ -37,5 +37,6 @@ jobs:
           # ssh-keygen -t rsa -b 4096 -C "$(whoami)@$(hostname)" -f ~/.ssh/id_rsa -N ""
           # https://github.com/settings/keys
           # https://github.com/settings/personal-access-tokens
+          # https://github.com/peaceiris/actions-gh-pages
           personal_token: ${{ secrets.DEPLOY_TOKEN }}
           publish_dir: site
