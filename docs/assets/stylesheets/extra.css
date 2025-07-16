@@ -221,19 +221,12 @@ summary {
 
 .article-content a {
   text-decoration: none;
-  color: red;
   font-weight: 500;
 }
 
 .article-content p {
   margin: 0;
   font-size: 1.1em;
-}
-
-@media (max-width: 480px) {
-  .article-content a {
-    color: red;
-  }
 }
 
 /* --------------- Projects & Contributions Page ----------------- */

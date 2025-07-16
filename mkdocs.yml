@@ -4,10 +4,7 @@ repo_name: MrChike/portfolio
 repo_url: https://github.com/MrChike/portfolio
 theme:
   name: material
-  # NB: logo.png should be created under docs/assets/images/
-  # This is what makes it visible under site/assets/images/
-
-  logo: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg
+  # Logo can be updated @ docs/overrides/partials/logo.html
   favicon: docs/assets/images/favicon.ico
   custom_dir: docs/overrides
   icon:
@@ -34,7 +31,7 @@ theme:
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      primary: blue grey
+      primary: deep orange
       scheme: slate
       toggle:
         icon: material/brightness-4
