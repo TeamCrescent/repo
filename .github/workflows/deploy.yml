@@ -4,7 +4,7 @@ on:
   push: # Trigger on repo push
     branches:
       - master
-      - exp # Update to preferred branch
+      - temp # Update to preferred branch
   workflow_dispatch: # Enables manual triggering
   schedule:
     - cron: '0 0 * * *'  # Run Jobs daily by 12am

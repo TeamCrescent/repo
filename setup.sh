@@ -16,27 +16,66 @@ mkdocs new portfolio
 
 cd portfolio
 
+pip3 freeze > requirements.txt
+
 mkdir -p docs/assets/images \
       docs/assets/javascripts \
       docs/assets/stylesheets \
       docs/overrides/partials \
       .github/workflows
 
-curl -o docs/assets/images/logo.svg https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/stockx.svg
+curl -o docs/assets/images/logo.svg https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/materialformkdocs.svg
 
 touch docs/assets/javascripts/extra.js \
       docs/assets/stylesheets/extra.css \
       docs/overrides/partials/logo.html \
-      docs/overrides/main.html \
       docs/articles.md \
       docs/certifications.md \
       docs/contributions.md \
       docs/projects.md \
-      .github/workflows/deploy.yml
+      .github/workflows/deploy.yml \
+      Journal.md
+
+echo "# Articles" > docs/articles.md
+echo "# Certifications" > docs/certifications.md
+echo "# Contributions" > docs/contributions.md
+echo "# Projects" > docs/projects.md
+
+mkdocs build
 
 # ------------------------------------------------------------------------------
 # Generate example environment configuration
 # ------------------------------------------------------------------------------
+
+# ---------------------------------MKDocs.yml---------------------------------------------
+cat <<EOF > mkdocs.yml
+site_name: MKDocs Portfolio Template
+
+nav:
+  - Home: index.md
+  - Projects: projects.md
+  - Contributions: contributions.md
+  - Certifications: certifications.md
+  - Articles: articles.md
+
+theme:
+  name: material
+  favicon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/materialformkdocs.svg
+  custom_dir: docs/overrides
+  features:
+    - toc.integrate
+    - navigation.tabs
+    - navigation.footer
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/extra.js
+
+EOF
+
+# ---------------------------------Journal.md---------------------------------------------
 cat <<EOF > Journal.md
 # 📝 Journal
 
@@ -57,13 +96,16 @@ cat <<EOF > Journal.md
 <details>
 <summary>💻 Commands</summary>
 
-```bash
+\`\`\`bash
 # Create & activate virtual environment
 python3 -m venv env && source env/bin/activate
 
 # Print current directory file structure
 tree -L 1
-```
+
+mkdocs serve -a "\$(hostname -I | awk '{print \$1}'):8000"
+
+\`\`\`
 
 </details>
 
@@ -72,15 +114,15 @@ tree -L 1
 <details>
 <summary>🐞 Error Logs & Fixes</summary>
 
-```bash
+\`\`\`bash
 # Error: ModuleNotFoundError: No module named 'requests'
 # Fix:
 pip install requests
 
 # Error: EADDRINUSE: address already in use
 # Fix:
-kill -9 $(lsof -t -i:3000)
-```
+kill -9 \$(lsof -t -i:3000)
+\`\`\`
 
 </details>
 
@@ -88,13 +130,12 @@ kill -9 $(lsof -t -i:3000)
 
 ## 🔗 Resource Findings
 - [ChatGPT](https://chatgpt.com/)
-- [Poll Unit](https://pollunit.com/en)
 
 ---
 
 ## 🧠 Notes and Learnings
-- Markdown supports collapsible sections using `<details>`
-- Use `kill -9 $(lsof -t -i:<port>)` to free up ports
+- Markdown supports collapsible sections using \`<details>\`
+- Use \`kill -9 \$(lsof -t -i:<port>)\` to free up ports
 
 ---
 
@@ -104,11 +145,19 @@ kill -9 $(lsof -t -i:3000)
 **Focus:** Setup, notes, task tracking, and tooling
 EOF
 
-# ------------------------------------------------------------------------------
+# ------------------------------------.gitignore------------------------------------------
 cat <<EOF > .gitignore
 env
 site
 
 EOF
 
-mkdocs build 
+# ------------------------------------Logo.html------------------------------------------
+cat <<EOF > docs/overrides/partials/logo.html
+{% block site_nav %}
+  <div class="social-icons">
+    <img src="../assets/images/logo.svg" alt="Profile" class="custom-icon" />
+  </div>
+{% endblock %}
+
+EOF
