@@ -1,13 +1,31 @@
 # 📝 Journal
 
-## TODO
-- Write scaffolding script ✅
-- Customize Logo Section ✅
+## 🧭 Table of Contents
+- ✅ [TODO](#todo)
+- 💻 [Commands](#commands)
+- 🐞 [Error Logs & Fixes](#error-logs--fixes)
+- 🔗 [Resource Findings](#resource-findings)
+- 🧠 [Notes & Learnings](#notes--learnings)
 
+---
 
-## Commands
+## ✅ TODO
+- Placeholder Task [Start-End:Duration] [Date]
+- Write scaffolding script [1hr] [16/07/2025] ✅ 
+- Customize Logo Section [5hrs] [16/07/2025] ✅
+
+---
+
+<details>
+<summary>💻 Commands</summary>
 
 ```bash
+# Create & activate virtual environment
+python3 -m venv env && source env/bin/activate
+
+# Print current directory file structure
+tree -L 1
+
 sudo apt install pngquant # compress png images in command line
 find . -type f -name "*.png" -exec pngquant --quality=65-80 --ext .png --force {} \;
 
@@ -40,11 +58,27 @@ python3 -m venv env && source env/bin/activate
 
 ```
 
-## Error Logs & Fixes
+</details>
+
+---
+
+<details>
+<summary>🐞 Error Logs & Fixes</summary>
 
 ```bash
+# Error: ModuleNotFoundError: No module named 'requests'
+# Fix:
+pip install requests
 
+# Error: EADDRINUSE: address already in use
+# Fix:
+kill -9 $(lsof -t -i:3000)
 ```
 
-## Resource Findings
-- https://pollunit.com/
+</details>
+
+---
+
+## 🔗 Resource Findings
+- [ChatGPT](https://chatgpt.com/)
+- [Poll Unit](https://pollunit.com/en)
