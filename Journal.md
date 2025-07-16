@@ -18,6 +18,7 @@ tree -L 1 # Displays current folder without recursion
 ├── projects
 └── scripts
 
+pip3 uninstall -y mkdocs mkdocs-get-deps mkdocs-material mkdocs-material-extensions
 ```
 
 ## Error Logs & Fixes

@@ -1,13 +1,13 @@
 name: Deploy Portfolio
 
 on:
-  push: # Trigger on push
+  push: # Trigger on repo push
     branches:
-      - master # Update to preferred branch
-      - exp
-  workflow_dispatch:  # Enables manual triggering
+      - master
+      - exp # Update to preferred branch
+  workflow_dispatch: # Enables manual triggering
   schedule:
-    - cron: '0 0 * * *'  # Scheduled every day by 12am
+    - cron: '0 0 * * *'  # Run Jobs daily by 12am
 
 jobs:
   build:
@@ -25,9 +25,6 @@ jobs:
       - name: Install MKDocs & Dependencies
         run: | 
           # https://squidfunk.github.io/mkdocs-material/customization/
-          # pip3 uninstall -y mkdocs mkdocs-get-deps mkdocs-material mkdocs-material-extensions
-          # pwd && tree -L 1
-          # pip3 install mkdocs-material==9.6.15
           pip3 install -r requirements.txt
 
       - name: Build MkDocs Site
