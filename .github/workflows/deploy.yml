@@ -4,6 +4,7 @@ on:
   push: # Trigger on push
     branches:
       - master # Update to preferred branch
+      - exp
   workflow_dispatch:  # Enables manual triggering
   schedule:
     - cron: '0 0 * * *'  # Scheduled every day by 12am
