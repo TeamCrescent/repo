@@ -11,7 +11,7 @@
 python3 -m venv env 
 source env/bin/activate
 
-pip install mkdocs-material==9.5.6
+pip3 install mkdocs-material==9.6.15
 mkdocs new portfolio
 
 cd portfolio
@@ -22,11 +22,12 @@ mkdir -p docs/assets/images \
       docs/overrides/partials \
       .github/workflows
 
-curl -o docs/assets/images/logo.png https://e7.pngegg.com/pngimages/574/377/png-clipart-logo-retro-bar-design-text-trademark.png
+curl -o docs/assets/images/logo.svg https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/stockx.svg
 
 touch docs/assets/javascripts/extra.js \
       docs/assets/stylesheets/extra.css \
-      docs/overrides/partials/main.html \
+      docs/overrides/partials/logo.html \
+      docs/overrides/main.html \
       docs/articles.md \
       docs/certifications.md \
       docs/contributions.md \
