@@ -8,8 +8,8 @@ theme:
   # This is what makes it visible under site/assets/images/
 
   logo: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg
-  favicon: assets/images/favicon.ico
-  custom_dir: docs/overrides/partials
+  favicon: docs/assets/images/favicon.ico
+  custom_dir: docs/overrides
   icon:
     repo: octicons/mark-github-24
     admonition:

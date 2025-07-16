@@ -23,7 +23,9 @@ jobs:
 
       - name: Install MKDocs & Dependencies
         run: | 
-          pip3 install mkdocs-material
+          # pip3 uninstall -y mkdocs mkdocs-get-deps mkdocs-material mkdocs-material-extensions
+          pip3 install mkdocs-material==9.6.15
+          mkdocs --version
 
       - name: Build MkDocs Site
         run: mkdocs build
