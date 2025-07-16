@@ -25,8 +25,9 @@ jobs:
         run: | 
           # https://squidfunk.github.io/mkdocs-material/customization/
           # pip3 uninstall -y mkdocs mkdocs-get-deps mkdocs-material mkdocs-material-extensions
-          # pip3 install mkdocs-material==9.6.15
-          pip3 install -r requirements.txt
+          pwd && tree -L 1
+          pip3 install mkdocs-material==9.6.15
+          # pip3 install -r requirements.txt
 
       - name: Build MkDocs Site
         run: mkdocs build
