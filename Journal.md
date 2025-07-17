@@ -13,6 +13,25 @@
 - Placeholder Task [Start-End:Duration] [Date]
 - Write scaffolding script [1hr] [16/07/2025] ✅ 
 - Customize Logo Section [5hrs] [16/07/2025] ✅
+- Conclude MKDocs Portfolio Setup (11:35-End ⟶ Duration) 17/07/2025
+
+---
+
+### 📅 17-07-2025
+
+- **Progress:** Conclude MKDocs Portfolio Setup
+- **Focus:** Improve Online Visibility
+- **Blockers:** Github Actions Setup
+- **Next:** [TO BE UPDATED]
+
+---
+
+### 📅 01-01-1900
+
+- **Progress:** Refactored core module for clarity
+- **Focus:** Improve maintainability
+- **Blockers:** Unclear API docs slowed down integration  
+- **Next:** Conclude MKDocs Portfolio Setup
 
 ---
 

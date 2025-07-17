@@ -1,6 +1,6 @@
 site_name: MrChike
 site_url: https://mrchike.github.io/portfolio/
-repo_name: MrChike/portfolio
+repo_name: MrChike/mkdocs-portfolio
 repo_url: https://github.com/MrChike/portfolio
 theme:
   name: material

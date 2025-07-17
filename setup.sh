@@ -49,7 +49,8 @@ mkdocs build
 
 # ---------------------------------MKDocs.yml---------------------------------------------
 cat <<EOF > mkdocs.yml
-site_name: MKDocs Portfolio Template
+site_name: Material for MkDocs Portfolio Template
+repo_name: MrChike/mkdocs-portfolio
 
 nav:
   - Home: index.md
