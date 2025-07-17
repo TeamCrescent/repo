@@ -161,3 +161,13 @@ cat <<EOF > docs/overrides/partials/logo.html
 {% endblock %}
 
 EOF
+
+cat <<EOF > docs/assets/stylesheets/extra.css
+.social-icons .custom-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: invert(100%);
+  transition: transform 0.2s ease;
+}
+
+EOF

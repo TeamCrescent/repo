@@ -5,7 +5,8 @@ repo_url: https://github.com/MrChike/portfolio
 theme:
   name: material
   # Logo can be updated @ docs/overrides/partials/logo.html
-  favicon: docs/assets/images/favicon.ico
+  # favicon: docs/assets/images/logo.svg
+  favicon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/dbt.svg
   custom_dir: docs/overrides
   icon:
     repo: octicons/mark-github-24
